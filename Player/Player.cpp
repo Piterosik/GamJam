@@ -22,6 +22,7 @@ Player::Player()
     m_frame = 0;
     auto handle = TexturesManager::getHandleTo("./data/player["+ intToStr(m_frame) +"].png");
     m_player.setTexture(TexturesManager::getTexture(handle));
+    m_speed = -0.2;
 }
 
 Player::~Player()
@@ -43,6 +44,18 @@ void Player::update( int _milseconds)
     }
     auto handle = TexturesManager::getHandleTo("./data/player["+ intToStr(m_frame) +"].png");
     m_player.setTexture(TexturesManager::getTexture(handle));
+
+    float rotacja = m_player.getRotation();
+	float vx = sin(( rotacja * M_PI ) / 180.0f );
+	float vy = -cos(( rotacja * M_PI ) / 180.0f );
+
+	m_player.move(m_speed*vx,m_speed*vy);
+
+    sf::Vector2f norm = sf::Vector2f(sf::Mouse::getPosition().x,sf::Mouse::getPosition().y) - m_player.getPosition();
+	float rot = atan2(norm.y,norm.x);
+	rot = rot * 180.f/M_PI;
+    rot = rot + 180;
+	m_player.setRotation(rot);
 }
 /*
     if(sf::Keyboard::isKeyPressed(sf::Keyboard::W))

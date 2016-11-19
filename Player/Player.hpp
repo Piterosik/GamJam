@@ -22,6 +22,7 @@ class Player
     int m_lastFrame;
     int m_frame;
     int m_elapsedTime;
+    int m_speed;
 };
 
 #endif // PLAYER_HPP
