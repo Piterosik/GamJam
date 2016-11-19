@@ -1,0 +1,61 @@
+# depslib dependency file v1.0
+1479571567 source:/home/gosc/Pulpit/GameJamCB/GameJam/main.cpp
+	<SFML/Graphics.hpp>
+	<SFML/System.hpp>
+	<SFML/Audio.hpp>
+	"./Game.hpp"
+	"./TexturesManager/TexturesManager.hpp"
+	"./Hallway/Hallway.hpp"
+	"./Player/Player.hpp"
+
+1479495920 /home/gosc/Pulpit/GameJamCB/GameJam/Game.hpp
+	<SFML/Graphics.hpp>
+	<SFML/System.hpp>
+	<SFML/Audio.hpp>
+	"./Reporter/Report.hpp"
+
+1475593126 /home/gosc/Pulpit/GameJamCB/GameJam/Reporter/Report.hpp
+	<string>
+	<iostream>
+
+1479570762 /home/gosc/Pulpit/GameJamCB/GameJam/TexturesManager/TexturesManager.hpp
+	<map>
+	<string>
+	".././Reporter/Report.hpp"
+	<SFML/Graphics.hpp>
+	<iostream>
+	<iomanip>
+	<functional>
+	<string>
+	<unordered_set>
+
+1479495920 source:/home/gosc/Pulpit/GameJamCB/GameJam/Game.cpp
+	"Game.hpp"
+
+1475593144 source:/home/gosc/Pulpit/GameJamCB/GameJam/Reporter/Report.cpp
+	"Report.hpp"
+
+1479570849 source:/home/gosc/Pulpit/GameJamCB/GameJam/TexturesManager/TexturesManager.cpp
+	"TexturesManager.hpp"
+
+1479570905 source:/home/gosc/Pulpit/GameJamCB/GameJam/Hallway/Hallway.cpp
+	"Hallway.hpp"
+
+1479570849 /home/gosc/Pulpit/GameJamCB/GameJam/Hallway/Hallway.hpp
+	<SFML/Graphics.hpp>
+	<SFML/System.hpp>
+	<SFML/Audio.hpp>
+	"../Game.hpp"
+	"../TexturesManager/TexturesManager.hpp"
+
+1479575911 source:/home/gosc/Pulpit/GameJamCB/GameJam/Player/Player.cpp
+	"Player.hpp"
+	<cmath>
+
+1479575596 /home/gosc/Pulpit/GameJamCB/GameJam/Player/Player.hpp
+	<SFML/Graphics.hpp>
+	<SFML/System.hpp>
+	<SFML/Audio.hpp>
+	"../Game.hpp"
+	"../TexturesManager/TexturesManager.hpp"
+
