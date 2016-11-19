@@ -21,6 +21,7 @@ class Player
     int m_pos_x,m_pos_y;
     int m_lastFrame;
     int m_frame;
+    int m_elapsedTime;
 };
 
 #endif // PLAYER_HPP

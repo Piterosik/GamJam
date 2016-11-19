@@ -18,7 +18,7 @@ Player::Player()
     m_pos_y = 0;
     m_player.setPosition(m_pos_x,m_pos_y);
     m_player.setOrigin(32,32);
-    m_lastFrame = 10;
+    m_lastFrame = 3;
     m_frame = 0;
     auto handle = TexturesManager::getHandleTo("./data/player["+ intToStr(m_frame) +"].png");
     m_player.setTexture(TexturesManager::getTexture(handle));
@@ -34,12 +34,15 @@ void Player::draw(sf::RenderWindow & _window)
 }
 void Player::update( int _milseconds)
 {
-    if(_milseconds > 90)
+    m_elapsedTime = m_elapsedTime + _milseconds;
+    if(m_elapsedTime > 160)
     {
         m_frame++;
-        if(m_frame > m_lastFrame)m_frame = 0;
-        std::cout << m_frame << std::endl;
+        if(m_frame > m_lastFrame-1)m_frame = 1;
+        m_elapsedTime = 0;
     }
+    auto handle = TexturesManager::getHandleTo("./data/player["+ intToStr(m_frame) +"].png");
+    m_player.setTexture(TexturesManager::getTexture(handle));
 }
 /*
     if(sf::Keyboard::isKeyPressed(sf::Keyboard::W))
