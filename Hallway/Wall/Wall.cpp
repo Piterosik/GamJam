@@ -17,7 +17,7 @@ void Wall::init(int _size_x,int _size_y)
     {
         for(int j=0;j<m_size_y;j++)
         {
-            m_tiles[i][j].init(i*64,j*64,"./data/tileguguHallway.png");
+            m_tiles[i][j].init(i*64,j*64,"./data/tileHallway2.png");
         }
     }
 }
