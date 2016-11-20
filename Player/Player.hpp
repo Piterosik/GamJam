@@ -7,14 +7,14 @@
 #include "../Game.hpp"
 #include "../TexturesManager/TexturesManager.hpp"
 
-
+#include "../Hallway/Hallway.hpp"
 class Player
 {
     public:
         Player();
         virtual ~Player();
         void draw(sf::RenderWindow & _window);
-        void update( int _milseconds);
+        void update( int _milseconds,Hallway & _hall);
     protected:
     public:
         sf::Sprite m_player;

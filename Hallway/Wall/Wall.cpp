@@ -28,7 +28,6 @@ void Wall::init(int _size_x,int _size_y,const std::string & _pathBackgroundTextu
         int random_Y =( std::rand() % m_size_y ) + 0;
         Obstacle * tmp = new Obstacle(random_X*64,random_Y*64,"./data/obstacle.png");
         m_obstaclesList.push_back(tmp);
-        std::cout << "New at " << random_X*64 << " " << random_Y*64 << std::endl;
     }
 }
 

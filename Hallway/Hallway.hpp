@@ -15,6 +15,7 @@ class Hallway
         virtual ~Hallway();
         void draw(sf::RenderWindow & _window);
         void update( int _milseconds);
+        void changeWall(int _i);
     protected:
     private:
         int m_currentWall;///0 - sufit, 1 - prawa sciana,2 -podloga,3 - lewa sciana

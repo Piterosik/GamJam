@@ -39,7 +39,7 @@ void Player::draw(sf::RenderWindow & _window)
 {
     _window.draw(m_player);
 }
-void Player::update( int _milseconds)
+void Player::update( int _milseconds,Hallway & _hall)
 {
     m_elapsedTime = m_elapsedTime + _milseconds;
     if(m_elapsedTime > 160)
@@ -62,8 +62,16 @@ void Player::update( int _milseconds)
     }
     m_pos_y = m_pos_y + m_speed * (_milseconds);
 
-    if(m_pos_x > 6*64-32)m_pos_x = 6*64-32;
-    if(m_pos_x < 1*64-40)m_pos_x = 1*64-40;
+    if(m_pos_x > 6*64-32)
+    {
+        m_pos_x = 1*64-32;
+        _hall.changeWall(+1);
+    }
+    if(m_pos_x < 1*64-40)
+    {
+        m_pos_x = 6*64-40;
+        _hall.changeWall(-1);
+    }
 	m_player.setPosition(m_pos_x,m_pos_y);
 
 }

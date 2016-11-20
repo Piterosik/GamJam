@@ -49,3 +49,10 @@ void Hallway::update( int _milseconds)
         break;
     }
 }
+void Hallway::changeWall(int _i)
+{
+    m_currentWall = m_currentWall + _i;
+    if(m_currentWall >= 4)m_currentWall = 0;
+    else if(m_currentWall <= -1)m_currentWall = 3;
+
+}

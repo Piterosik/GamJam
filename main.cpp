@@ -35,7 +35,7 @@ int main()
             }
             timeLastUpdate -= stepTime;
             //update(stepTime);
-            player.update(stepTime.asMilliseconds());
+            player.update(stepTime.asMilliseconds(),hall);
             camera.setCenter(player.m_pos_x,player.m_pos_y);
             hall.update(stepTime.asMilliseconds());
         }
