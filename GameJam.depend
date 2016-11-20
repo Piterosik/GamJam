@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1479571567 source:/home/gosc/Pulpit/GameJamCB/GameJam/main.cpp
+1479594361 source:/home/gosc/Pulpit/GameJamCB/GameJam/main.cpp
 	<SFML/Graphics.hpp>
 	<SFML/System.hpp>
 	<SFML/Audio.hpp>
@@ -35,27 +35,54 @@
 1475593144 source:/home/gosc/Pulpit/GameJamCB/GameJam/Reporter/Report.cpp
 	"Report.hpp"
 
-1479570849 source:/home/gosc/Pulpit/GameJamCB/GameJam/TexturesManager/TexturesManager.cpp
+1479605958 source:/home/gosc/Pulpit/GameJamCB/GameJam/TexturesManager/TexturesManager.cpp
 	"TexturesManager.hpp"
 
-1479570905 source:/home/gosc/Pulpit/GameJamCB/GameJam/Hallway/Hallway.cpp
+1479606013 source:/home/gosc/Pulpit/GameJamCB/GameJam/Hallway/Hallway.cpp
 	"Hallway.hpp"
 
-1479570849 /home/gosc/Pulpit/GameJamCB/GameJam/Hallway/Hallway.hpp
+1479606063 /home/gosc/Pulpit/GameJamCB/GameJam/Hallway/Hallway.hpp
+	<SFML/Graphics.hpp>
+	<SFML/System.hpp>
+	<SFML/Audio.hpp>
+	"./Wall/Wall.hpp"
+	"../TexturesManager/TexturesManager.hpp"
+
+1479595019 source:/home/gosc/Pulpit/GameJamCB/GameJam/Player/Player.cpp
+	"Player.hpp"
+	<cmath>
+
+1479589703 /home/gosc/Pulpit/GameJamCB/GameJam/Player/Player.hpp
 	<SFML/Graphics.hpp>
 	<SFML/System.hpp>
 	<SFML/Audio.hpp>
 	"../Game.hpp"
 	"../TexturesManager/TexturesManager.hpp"
 
-1479575911 source:/home/gosc/Pulpit/GameJamCB/GameJam/Player/Player.cpp
-	"Player.hpp"
-	<cmath>
+1479605848 source:/home/gosc/Pulpit/GameJamCB/GameJam/Hallway/Wall/Tile.cpp
+	"Tile.hpp"
 
-1479577810 /home/gosc/Pulpit/GameJamCB/GameJam/Player/Player.hpp
+1479605848 /home/gosc/Pulpit/GameJamCB/GameJam/Hallway/Wall/Tile.hpp
 	<SFML/Graphics.hpp>
 	<SFML/System.hpp>
 	<SFML/Audio.hpp>
-	"../Game.hpp"
+	"../../TexturesManager/TexturesManager.hpp"
+
+1479605958 source:/home/gosc/Pulpit/GameJamCB/GameJam/Hallway/Wall/Wall.cpp
+	"Wall.hpp"
+
+1479606173 /home/gosc/Pulpit/GameJamCB/GameJam/Hallway/Wall/Wall.hpp
+	<SFML/Graphics.hpp>
+	<SFML/System.hpp>
+	<SFML/Audio.hpp>
+	"./Tile.hpp"
+
+1479592523 source:/home/gosc/Pulpit/GameJamCB/GameJam/Obstacle/Obstacle.cpp
+	"Obstacle.hpp"
+
+1479592555 /home/gosc/Pulpit/GameJamCB/GameJam/Obstacle/Obstacle.hpp
+	<SFML/Graphics.hpp>
+	<SFML/System.hpp>
+	<SFML/Audio.hpp>
 	"../TexturesManager/TexturesManager.hpp"
 

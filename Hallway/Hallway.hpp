@@ -5,7 +5,7 @@
 #include <SFML/System.hpp>
 #include <SFML/Audio.hpp>
 
-#include "../Game.hpp"
+#include "./Wall/Wall.hpp"
 #include "../TexturesManager/TexturesManager.hpp"
 
 class Hallway
@@ -17,8 +17,11 @@ class Hallway
         void update( int _milseconds);
     protected:
     private:
-        sf::Vector2u m_size;
-        std::vector<sf::Sprite*> m_tilesList;
+        int m_currentWall;///0 - sufit, 1 - prawa sciana,2 -podloga,3 - lewa sciana
+        Wall *floor;
+        Wall *ceiling;
+        Wall * LWall,*RWall;
+
 };
 
 #endif // HALLWAY_HPP

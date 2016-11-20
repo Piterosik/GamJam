@@ -13,6 +13,10 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
+					<Add directory="include" />
+					<Add directory="Player" />
+					<Add directory="Obstacle" />
+					<Add directory="Hallway/Wall" />
 				</Compiler>
 				<Linker>
 					<Add library="sfml-graphics" />
@@ -27,6 +31,10 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
+					<Add directory="include" />
+					<Add directory="Player" />
+					<Add directory="Obstacle" />
+					<Add directory="Hallway/Wall" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -39,7 +47,20 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
-		<Unit filename="cb.bmp" />
+		<Unit filename="Hallway/Hallway.cpp" />
+		<Unit filename="Hallway/Hallway.hpp" />
+		<Unit filename="Hallway/Wall/Tile.cpp" />
+		<Unit filename="Hallway/Wall/Tile.hpp" />
+		<Unit filename="Hallway/Wall/Wall.cpp" />
+		<Unit filename="Hallway/Wall/Wall.hpp" />
+		<Unit filename="Obstacle/Obstacle.cpp" />
+		<Unit filename="Obstacle/Obstacle.hpp" />
+		<Unit filename="Player/Player.cpp" />
+		<Unit filename="Player/Player.hpp" />
+		<Unit filename="Reporter/Report.cpp" />
+		<Unit filename="Reporter/Report.hpp" />
+		<Unit filename="TexturesManager/TexturesManager.cpp" />
+		<Unit filename="TexturesManager/TexturesManager.hpp" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />

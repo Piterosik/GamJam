@@ -8,11 +8,13 @@
 int main()
 {
     sf::RenderWindow window(sf::VideoMode(640,480), "SFML works!");
-
-    TexturesManager mgr;
     sf::Time timeLastUpdate = sf::Time::Zero;
     sf::Clock gameClock;
     const sf::Time stepTime = sf::seconds(1.f/60.f);
+
+    sf::View camera;
+    camera.setSize(640,480);
+    camera.setCenter(320,240);
 
     Player player;
     Hallway hall;
@@ -31,11 +33,13 @@ int main()
             timeLastUpdate -= stepTime;
             //update(stepTime);
             player.update(stepTime.asMilliseconds());
+            camera.setCenter(player.m_pos_x,player.m_pos_y);
             hall.update(stepTime.asMilliseconds());
         }
         window.clear(sf::Color::Black);
         hall.draw(window);
         player.draw(window);
+        window.setView(camera);
         window.display();
     }
 

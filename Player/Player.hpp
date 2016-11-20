@@ -16,13 +16,14 @@ class Player
         void draw(sf::RenderWindow & _window);
         void update( int _milseconds);
     protected:
-    private:
-    sf::Sprite m_player;
-    int m_pos_x,m_pos_y;
-    int m_lastFrame;
-    int m_frame;
-    int m_elapsedTime;
-    int m_speed;
+    public:
+        sf::Sprite m_player;
+        float m_pos_x,m_pos_y;
+        int m_lastFrame;
+        int m_frame;
+        int m_elapsedTime;
+        float m_speed;
+        float m_rotation;
 };
 
 #endif // PLAYER_HPP

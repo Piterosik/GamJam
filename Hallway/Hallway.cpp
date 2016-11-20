@@ -2,22 +2,12 @@
 
 Hallway::Hallway()
 {
-    auto handle = TexturesManager::getHandleTo("./data/tileHallway.png");
-    m_size.x = 6;
-    m_size.y = 30;
-
-    for(int i = 0; i < m_size.x;i++)
-    {///Kolumna nr i
-        for(int j = 0; j< m_size.y;j++)
-        {///Wiersz nr j
-            sf::Sprite* tmp = new sf::Sprite;
-            tmp->setTexture(TexturesManager::getTexture(handle));
-            tmp->setPosition(i*64+2*64,j*64);
-            m_tilesList.push_back(tmp);
-            std::cout << "Sprite at " << i*64 << " " << j*64 << std::endl;
-        }
-    }
-
+    m_currentWall = 2;
+    int m_currentWall;///0 - sufit, 1 - prawa sciana,2 -podloga,3 - lewa sciana
+    //floor = new Wall(6,90);
+    //ceiling =  new Wall(6,90);
+    //LWall =  new Wall(6,90);
+    //RWall =  new Wall(6,90);
 }
 
 Hallway::~Hallway()
@@ -26,12 +16,37 @@ Hallway::~Hallway()
 }
 void Hallway::draw(sf::RenderWindow & _window)
 {
-     for (std::vector<sf::Sprite*>::iterator it=m_tilesList.begin(); it != m_tilesList.end(); ++it)
-     {
-        _window.draw(*(*it));
-     }
+    switch(m_currentWall)
+    {
+        case 0:
+            ceiling->draw(_window);
+        break;
+        case 1:
+            RWall->draw(_window);
+        break;
+        case 2:
+            floor->draw(_window);
+        break;
+        case 3:
+            LWall->draw(_window);
+        break;
+    }
 }
 void Hallway::update( int _milseconds)
 {
-
+    switch(m_currentWall)
+    {
+        case 0:
+            ceiling->update(_milseconds);
+        break;
+        case 1:
+            RWall->update(_milseconds);
+        break;
+        case 2:
+            floor->update(_milseconds);
+        break;
+        case 3:
+            LWall->update(_milseconds);
+        break;
+    }
 }
