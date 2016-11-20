@@ -29,7 +29,6 @@ std::size_t TexturesManager::getHandleTo(std::string _path)
         m_texturesMap.insert(std::pair<size_t,sf::Texture*>(_hash,ptr));
         return TexturesManager::getHandleTo(_path);
     }
-    std::cout << "Texture at " <<&(it->second) << std::endl;
     return it->first;
 
 }

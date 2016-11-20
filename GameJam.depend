@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1479594361 source:/home/gosc/Pulpit/GameJamCB/GameJam/main.cpp
+1479608706 source:/home/gosc/Pulpit/GameJamCB/GameJam/main.cpp
 	<SFML/Graphics.hpp>
 	<SFML/System.hpp>
 	<SFML/Audio.hpp>
@@ -7,6 +7,8 @@
 	"./TexturesManager/TexturesManager.hpp"
 	"./Hallway/Hallway.hpp"
 	"./Player/Player.hpp"
+	<cstdlib>
+	<ctime>
 
 1479495920 /home/gosc/Pulpit/GameJamCB/GameJam/Game.hpp
 	<SFML/Graphics.hpp>
@@ -35,10 +37,10 @@
 1475593144 source:/home/gosc/Pulpit/GameJamCB/GameJam/Reporter/Report.cpp
 	"Report.hpp"
 
-1479605958 source:/home/gosc/Pulpit/GameJamCB/GameJam/TexturesManager/TexturesManager.cpp
+1479608809 source:/home/gosc/Pulpit/GameJamCB/GameJam/TexturesManager/TexturesManager.cpp
 	"TexturesManager.hpp"
 
-1479606729 source:/home/gosc/Pulpit/GameJamCB/GameJam/Hallway/Hallway.cpp
+1479608261 source:/home/gosc/Pulpit/GameJamCB/GameJam/Hallway/Hallway.cpp
 	"Hallway.hpp"
 
 1479606705 /home/gosc/Pulpit/GameJamCB/GameJam/Hallway/Hallway.hpp
@@ -48,7 +50,7 @@
 	"./Wall/Wall.hpp"
 	"../TexturesManager/TexturesManager.hpp"
 
-1479606564 source:/home/gosc/Pulpit/GameJamCB/GameJam/Player/Player.cpp
+1479607551 source:/home/gosc/Pulpit/GameJamCB/GameJam/Player/Player.cpp
 	"Player.hpp"
 	<cmath>
 
@@ -68,19 +70,21 @@
 	<SFML/Audio.hpp>
 	"../../TexturesManager/TexturesManager.hpp"
 
-1479607400 source:/home/gosc/Pulpit/GameJamCB/GameJam/Hallway/Wall/Wall.cpp
+1479609412 source:/home/gosc/Pulpit/GameJamCB/GameJam/Hallway/Wall/Wall.cpp
 	"Wall.hpp"
 
-1479607179 /home/gosc/Pulpit/GameJamCB/GameJam/Hallway/Wall/Wall.hpp
+1479608765 /home/gosc/Pulpit/GameJamCB/GameJam/Hallway/Wall/Wall.hpp
 	<SFML/Graphics.hpp>
 	<SFML/System.hpp>
 	<SFML/Audio.hpp>
+	<cstdlib>
 	"./Tile.hpp"
+	"../../Obstacle/Obstacle.hpp"
 
-1479592523 source:/home/gosc/Pulpit/GameJamCB/GameJam/Obstacle/Obstacle.cpp
+1479609291 source:/home/gosc/Pulpit/GameJamCB/GameJam/Obstacle/Obstacle.cpp
 	"Obstacle.hpp"
 
-1479592555 /home/gosc/Pulpit/GameJamCB/GameJam/Obstacle/Obstacle.hpp
+1479609291 /home/gosc/Pulpit/GameJamCB/GameJam/Obstacle/Obstacle.hpp
 	<SFML/Graphics.hpp>
 	<SFML/System.hpp>
 	<SFML/Audio.hpp>

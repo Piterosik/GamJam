@@ -2,12 +2,11 @@
 
 Hallway::Hallway()
 {
-    m_currentWall = 2;
-    int m_currentWall;///0 - sufit, 1 - prawa sciana,2 -podloga,3 - lewa sciana
-    floor.init(6,90);
-    //ceiling =  new Wall(6,90);
-    //LWall =  new Wall(6,90);
-    //RWall =  new Wall(6,90);
+    m_currentWall = 2;///0 - sufit, 1 - prawa sciana,2 -podloga,3 - lewa sciana
+    floor.init(6,90,"./data/tileHallway.png");
+    ceiling.init(6,90,"./data/tileHallway2.png");
+    LWall.init(6,90,"./data/tileHallway2.png");
+    RWall.init(6,90,"./data/tileHallway2.png");
 }
 
 Hallway::~Hallway()

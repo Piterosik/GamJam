@@ -10,13 +10,15 @@ class Obstacle
         Obstacle(int _position_x,int _position_y,std::string _path);
         virtual ~Obstacle();
         bool isCollision(float _player_x,float _player_y);
-        void draw(sf::RenderWindow _window);
+        void draw(sf::RenderWindow & _window);
         void update(int _miliseconds);
     protected:
     private:
         int m_position_x;
         int m_position_y;
         sf::Sprite m_sprite;
+        int m_size_x;
+        int m_size_y;
 };
 
 #endif // OBSTACLE_HPP

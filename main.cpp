@@ -5,8 +5,11 @@
 #include "./TexturesManager/TexturesManager.hpp"
 #include "./Hallway/Hallway.hpp"
 #include "./Player/Player.hpp"
+#include <cstdlib>
+#include <ctime>
 int main()
 {
+    srand( time( NULL ) );
     sf::RenderWindow window(sf::VideoMode(640,480), "SFML works!");
     sf::Time timeLastUpdate = sf::Time::Zero;
     sf::Clock gameClock;
