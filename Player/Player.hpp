@@ -24,6 +24,7 @@ class Player
         int m_elapsedTime;
         float m_speed;
         float m_rotation;
+        std::size_t m_textureHandles[3];
 };
 
 #endif // PLAYER_HPP

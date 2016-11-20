@@ -38,21 +38,21 @@
 1479605958 source:/home/gosc/Pulpit/GameJamCB/GameJam/TexturesManager/TexturesManager.cpp
 	"TexturesManager.hpp"
 
-1479606013 source:/home/gosc/Pulpit/GameJamCB/GameJam/Hallway/Hallway.cpp
+1479606729 source:/home/gosc/Pulpit/GameJamCB/GameJam/Hallway/Hallway.cpp
 	"Hallway.hpp"
 
-1479606063 /home/gosc/Pulpit/GameJamCB/GameJam/Hallway/Hallway.hpp
+1479606705 /home/gosc/Pulpit/GameJamCB/GameJam/Hallway/Hallway.hpp
 	<SFML/Graphics.hpp>
 	<SFML/System.hpp>
 	<SFML/Audio.hpp>
 	"./Wall/Wall.hpp"
 	"../TexturesManager/TexturesManager.hpp"
 
-1479595019 source:/home/gosc/Pulpit/GameJamCB/GameJam/Player/Player.cpp
+1479606564 source:/home/gosc/Pulpit/GameJamCB/GameJam/Player/Player.cpp
 	"Player.hpp"
 	<cmath>
 
-1479589703 /home/gosc/Pulpit/GameJamCB/GameJam/Player/Player.hpp
+1479606564 /home/gosc/Pulpit/GameJamCB/GameJam/Player/Player.hpp
 	<SFML/Graphics.hpp>
 	<SFML/System.hpp>
 	<SFML/Audio.hpp>
@@ -68,10 +68,10 @@
 	<SFML/Audio.hpp>
 	"../../TexturesManager/TexturesManager.hpp"
 
-1479605958 source:/home/gosc/Pulpit/GameJamCB/GameJam/Hallway/Wall/Wall.cpp
+1479606184 source:/home/gosc/Pulpit/GameJamCB/GameJam/Hallway/Wall/Wall.cpp
 	"Wall.hpp"
 
-1479606173 /home/gosc/Pulpit/GameJamCB/GameJam/Hallway/Wall/Wall.hpp
+1479607179 /home/gosc/Pulpit/GameJamCB/GameJam/Hallway/Wall/Wall.hpp
 	<SFML/Graphics.hpp>
 	<SFML/System.hpp>
 	<SFML/Audio.hpp>

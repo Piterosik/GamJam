@@ -24,6 +24,11 @@ Player::Player()
     m_player.setTexture(TexturesManager::getTexture(handle));
     m_speed = 0.04;
     m_rotation = 0;
+    for(int i =0;i < m_lastFrame;i++)
+    {
+        auto handle = TexturesManager::getHandleTo("./data/player["+ intToStr(i) +"].png");
+        m_textureHandles[i] = handle;
+    }
 }
 
 Player::~Player()
@@ -43,7 +48,7 @@ void Player::update( int _milseconds)
         if(m_frame > m_lastFrame-1)m_frame = 1;
         m_elapsedTime = 0;
     }
-    auto handle = TexturesManager::getHandleTo("./data/player["+ intToStr(m_frame) +"].png");
+    auto handle = m_textureHandles[m_frame];
     m_player.setTexture(TexturesManager::getTexture(handle));
 
 

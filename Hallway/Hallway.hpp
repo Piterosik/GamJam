@@ -18,9 +18,10 @@ class Hallway
     protected:
     private:
         int m_currentWall;///0 - sufit, 1 - prawa sciana,2 -podloga,3 - lewa sciana
-        Wall *floor;
-        Wall *ceiling;
-        Wall * LWall,*RWall;
+        Wall floor;
+        Wall ceiling;
+        Wall LWall;
+        Wall RWall;
 
 };
 
