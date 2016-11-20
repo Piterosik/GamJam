@@ -1,0 +1,20 @@
+﻿  Game.cpp
+  Hallway.cpp
+  Tile.cpp
+Hallway\Wall\Tile.cpp(9): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  Wall.cpp
+  main.cpp
+main.cpp(12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Obstacle.cpp
+Obstacle\Obstacle.cpp(8): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Obstacle\Obstacle.cpp(11): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+Obstacle\Obstacle.cpp(12): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+  Player.cpp
+Player\Player.cpp(25): warning C4305: '=': truncation from 'double' to 'float'
+  Report.cpp
+  TexturesManager.cpp
+  Generating code
+  All 371 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  GamJam2.vcxproj -> C:\Users\Piotr\Source\Repos\GamJam2\x64\Release\GamJam2.exe
+  GamJam2.vcxproj -> C:\Users\Piotr\Source\Repos\GamJam2\x64\Release\GamJam2.pdb (Full PDB)
